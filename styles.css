@@ -4,6 +4,12 @@
   --COLOR-BRIGHT-PINK: #ff5964;
   --COLOR-COOL-GRAY: #7e7f9a;
   --COLOR-CADET-GRAY: #97a7b3;
+
+  --FONT-FAM-FRANKLIN: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+    sans-serif;
+  --FONT-FAM-FANTASY: fantasy;
+  --FONT-FAM-LUCIDA: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 *,
@@ -22,6 +28,9 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 15px;
+
+  color: var(--COLOR-DARK-GREEN);
+  font-family: var(--FONT-FAM-LUCIDA);
 
   display: flex;
   flex-direction: column;
@@ -44,17 +53,27 @@ section {
   gap: 5px 5px;
 }
 
-.color-el {
+.color-el,
+.font-el {
   width: 319px;
   height: 150px;
   padding: 5px;
-  color: var(--COLOR-DARK-GREEN);
+
+  border: 1px solid darkgray;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px 0px;
+}
+
+p.bold {
+  font-weight: bold;
+}
+
+p.italic {
+  font-style: italic;
 }
 
 #color-vanilla {
@@ -65,6 +84,7 @@ section {
   background-color: var(--COLOR-DARK-GREEN);
   color: var(--COLOR-VANILLA);
 }
+
 #color-bright-pink {
   background-color: var(--COLOR-BRIGHT-PINK);
 }
@@ -75,4 +95,12 @@ section {
 
 #color-cadet-gray {
   background-color: var(--COLOR-CADET-GRAY);
+}
+
+#font-fantasy {
+  font-family: var(--FONT-FAM-FANTASY);
+}
+
+#font-lucida {
+  font-family: var(--FONT-FAM-LUCIDA);
 }
