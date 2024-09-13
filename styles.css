@@ -1,0 +1,78 @@
+:root {
+  --COLOR-VANILLA: #f6efa6;
+  --COLOR-DARK-GREEN: #042a2b;
+  --COLOR-BRIGHT-PINK: #ff5964;
+  --COLOR-COOL-GRAY: #7e7f9a;
+  --COLOR-CADET-GRAY: #97a7b3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px 0px;
+}
+
+main {
+  width: 1024px;
+}
+
+section {
+  margin-top: 15px;
+  padding: 15px;
+  border: 3px solid darkgray;
+  border-radius: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 5px;
+}
+
+.color-el {
+  width: 319px;
+  height: 150px;
+  padding: 5px;
+  color: var(--COLOR-DARK-GREEN);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 0px;
+}
+
+#color-vanilla {
+  background-color: var(--COLOR-VANILLA);
+}
+
+#color-dark-green {
+  background-color: var(--COLOR-DARK-GREEN);
+  color: var(--COLOR-VANILLA);
+}
+#color-bright-pink {
+  background-color: var(--COLOR-BRIGHT-PINK);
+}
+
+#color-cool-gray {
+  background-color: var(--COLOR-COOL-GRAY);
+}
+
+#color-cadet-gray {
+  background-color: var(--COLOR-CADET-GRAY);
+}
